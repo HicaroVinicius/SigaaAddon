@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+
+  "name": "Sigaa Addon",
+  "description": "This enable si3 for chrome based browsers",
+  "version": "0.0.4",
+
+  "permissions": [
+    "tabs", "https://si3.ufc.br/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://si3.ufc.br/*"],
+      "run_at": "document_idle",
+      "js": ["jquery.min.js","content.js"]
+    }
+  ],
+  "web_accessible_resources": ["inject.js", "jquery.min.js" ]
+}
