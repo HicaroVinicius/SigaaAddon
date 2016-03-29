@@ -75,10 +75,15 @@ function makeSchedule(classes){
 
      var tableEl = matrixToTable(table);
 
-    //style table
+    //##style table##
+    var headColor = "#999999",
+        bodyColor = "#DDDDDD"; 
     var stlyteTable = { margin: "auto", "background-color": "white"};
-    tableEl.find("tr:first-child").css("font-weight", "bold");
-    tableEl.find("td:first-child").css("font-weight", "bold");
+    //td from head
+    tableEl.find("tr:first-child").css({"font-weight": "bold", "background-color": headColor});
+    tableEl.find("td:first-child").css({"font-weight": "bold", "background-color": headColor});
+    tableEl.find("td:not(tr:first-child td, td:first-child)").css("background-color", bodyColor);
+    
     tableEl.find("td").css("border", "1px solid black");
     tableEl.addClass("table");
     tableEl.css(stlyteTable);
