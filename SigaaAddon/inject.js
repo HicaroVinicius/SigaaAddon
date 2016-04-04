@@ -1,3 +1,4 @@
+window.onload = null;//remove popup
     var enableLogin = function(){ 
 
 	    var form = $("form[name='loginForm']");
