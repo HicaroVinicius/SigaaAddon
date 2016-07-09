@@ -2,8 +2,9 @@
 Extensão para navegadores baseados em Chromium com adicionais para si3
 
 **O que isso adiciona no Sigaa?**<br>
-Bem, por hora, esta extensão habilita o login no si3 pelo Chromium e 
-adiciona um link no rodapé das diciplinas que dá acesso a uma tabela de horários.      
+Bem, por hora, esta extensão habilita o login no si3 pelo Chromium,
+adiciona um link no rodapé das diciplinas que dá acesso a uma tabela de horários e
+permiti fazer uma tabela de horários na página de [busca de turmas](https://si3.ufc.br/sigaa/ensino/turma/busca_turma.jsf#).     
 
 **Para adicionar SigaaAddon ao Chromium:**<br>
 Acesse pelo navegador "chrome://extensions/"<br>
@@ -18,3 +19,5 @@ Ainda não empacotamos esta extensão para ao Firefox, mas não se desespere, ai
 
 **Screenshots**
 ![Sigaa Addon show schedule](https://raw.githubusercontent.com/LaercioSantana/SigaaAddon/master/Screenshots/horarios.png)
+![Sigaa Addon show schedule in 'busca turmas'](https://raw.githubusercontent.com/LaercioSantana/SigaaAddon/master/Screenshots/horarios_busca_turma.png)]
+
