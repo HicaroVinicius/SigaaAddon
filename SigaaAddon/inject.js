@@ -55,7 +55,7 @@ function Course(el){
         var start = parseFloat(schedules[0]);
         while(start  < parseFloat(schedules[1])){
             this.schedules.push({day: day, schedule: start+":00"});
-            start += 2;    
+            start += 2;
         }
     }
 }
@@ -88,17 +88,17 @@ function makeSchedule(courses){
 
     //##style table##
     var headColor = "#999999",
-        bodyColor = "#DDDDDD"; 
+        bodyColor = "#DDDDDD";
     var stlyteTable = { margin: "auto", "background-color": "white"};
     //td from head
     tableEl.find("tr:first-child").css({"font-weight": "bold", "background-color": headColor});
     tableEl.find("td:first-child").css({"font-weight": "bold", "background-color": headColor});
     tableEl.find("td:not(tr:first-child td, td:first-child)").css("background-color", bodyColor);
-    
+
     tableEl.find("td").css("border", "1px solid black");
     tableEl.addClass("table");
     tableEl.css(stlyteTable);
-   
+
     return tableEl;
 }
 function findCell(table, cellLabels){
@@ -235,6 +235,6 @@ var url = window.location.href;
 if(url.indexOf("verTelaLogin") > -1 || url.indexOf("logar") > -1)
     loginRoute();
 else if(url.indexOf("discente.jsf") > -1)
-    studentHome();
+    window.addEventListener('load',  studentHome);
 else if(url.indexOf("busca_turma.jsf") > -1)
-    findCoursesClasses();
+    window.addEventListener('load',  findCoursesClasses);
